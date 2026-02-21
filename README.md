@@ -2,14 +2,15 @@
 
 
 ## Repo Structure
+```
 acne-ml/
 ├── README.md
-├── requirements.txt  (or environment.yml)
+├── requirements.txt
 ├── .gitignore
 ├── configs/
 │   ├── baseline.yaml
 │   └── resnet50_finetune.yaml
-├── data/              # gitignored (except maybe a tiny sample)
+├── data/            
 │   ├── raw/
 │   └── processed/
 ├── notebooks/
@@ -17,7 +18,7 @@ acne-ml/
 │   └── 02_final_results.ipynb
 ├── src/
 │   ├── data/
-│   │   ├── datamodule.py   (or dataset.py)
+│   │   ├── dataset.py
 │   │   └── transforms.py
 │   ├── models/
 │   │   ├── baseline_lr.py
@@ -25,4 +26,5 @@ acne-ml/
 │   │   └── resnet50.py
 │   ├── train.py
 │   └── evaluate.py
-└── outputs/            # gitignored (models/plots/metrics)
+└── outputs/
+```
